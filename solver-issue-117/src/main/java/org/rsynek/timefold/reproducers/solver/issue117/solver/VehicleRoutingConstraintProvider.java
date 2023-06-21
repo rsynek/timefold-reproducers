@@ -1,11 +1,11 @@
-package org.rsynek.timefold.reproducers.issue117.solver;
+package org.rsynek.timefold.reproducers.solver.issue117.solver;
 
 import ai.timefold.solver.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
 import ai.timefold.solver.core.api.score.stream.Constraint;
 import ai.timefold.solver.core.api.score.stream.ConstraintFactory;
 import ai.timefold.solver.core.api.score.stream.ConstraintProvider;
-import org.rsynek.timefold.reproducers.issue117.domain.Customer;
-import org.rsynek.timefold.reproducers.issue117.domain.Vehicle;
+import org.rsynek.timefold.reproducers.solver.issue117.domain.Customer;
+import org.rsynek.timefold.reproducers.solver.issue117.domain.Vehicle;
 
 public class VehicleRoutingConstraintProvider implements ConstraintProvider {
 

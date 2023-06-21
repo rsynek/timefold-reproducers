@@ -1,11 +1,11 @@
-package org.rsynek.timefold.reproducers.issue117.domain;
+package org.rsynek.timefold.reproducers.solver.issue117.domain;
 
 import ai.timefold.solver.core.api.domain.entity.PlanningEntity;
 import ai.timefold.solver.core.api.domain.variable.InverseRelationShadowVariable;
 import ai.timefold.solver.core.api.domain.variable.NextElementShadowVariable;
 import ai.timefold.solver.core.api.domain.variable.PreviousElementShadowVariable;
 import ai.timefold.solver.core.api.domain.variable.ShadowVariable;
-import org.rsynek.timefold.reproducers.issue117.solver.ArrivalTimeUpdatingVariableListener;
+import org.rsynek.timefold.reproducers.solver.issue117.solver.ArrivalTimeUpdatingVariableListener;
 
 import java.time.Duration;
 import java.time.LocalTime;

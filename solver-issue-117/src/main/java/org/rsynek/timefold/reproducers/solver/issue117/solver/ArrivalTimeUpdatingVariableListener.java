@@ -1,12 +1,12 @@
-package org.rsynek.timefold.reproducers.issue117.solver;
+package org.rsynek.timefold.reproducers.solver.issue117.solver;
 
 import java.time.LocalTime;
 import java.util.Objects;
 
 import ai.timefold.solver.core.api.domain.variable.VariableListener;
 import ai.timefold.solver.core.api.score.director.ScoreDirector;
-import org.rsynek.timefold.reproducers.issue117.domain.Customer;
-import org.rsynek.timefold.reproducers.issue117.domain.VehicleRoutePlan;
+import org.rsynek.timefold.reproducers.solver.issue117.domain.Customer;
+import org.rsynek.timefold.reproducers.solver.issue117.domain.VehicleRoutePlan;
 
 public class ArrivalTimeUpdatingVariableListener implements VariableListener<VehicleRoutePlan, Customer> {
 

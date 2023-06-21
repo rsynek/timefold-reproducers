@@ -1,14 +1,14 @@
-package org.rsynek.timefold.reproducers.issue117;
+package org.rsynek.timefold.reproducers.solver.issue117;
 
 import ai.timefold.solver.core.api.solver.Solver;
 import ai.timefold.solver.core.api.solver.SolverFactory;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import org.junit.jupiter.api.Test;
-import org.rsynek.timefold.reproducers.issue117.domain.Customer;
-import org.rsynek.timefold.reproducers.issue117.domain.Depot;
-import org.rsynek.timefold.reproducers.issue117.domain.Vehicle;
-import org.rsynek.timefold.reproducers.issue117.domain.VehicleRoutePlan;
+import org.rsynek.timefold.reproducers.solver.issue117.domain.Customer;
+import org.rsynek.timefold.reproducers.solver.issue117.domain.Depot;
+import org.rsynek.timefold.reproducers.solver.issue117.domain.Vehicle;
+import org.rsynek.timefold.reproducers.solver.issue117.domain.VehicleRoutePlan;
 
 import java.time.Duration;
 import java.time.LocalTime;

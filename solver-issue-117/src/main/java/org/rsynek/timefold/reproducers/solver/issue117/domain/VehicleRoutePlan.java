@@ -1,4 +1,4 @@
-package org.rsynek.timefold.reproducers.issue117.domain;
+package org.rsynek.timefold.reproducers.solver.issue117.domain;
 
 import ai.timefold.solver.core.api.domain.solution.PlanningEntityCollectionProperty;
 import ai.timefold.solver.core.api.domain.solution.PlanningScore;

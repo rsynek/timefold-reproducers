@@ -9,7 +9,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
-    <module>issue-117</module>
+    <module>solver-issue-117</module>
   </modules>
 
   <properties>
