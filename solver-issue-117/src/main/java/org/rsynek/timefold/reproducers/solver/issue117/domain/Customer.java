@@ -1,6 +1,7 @@
 package org.rsynek.timefold.reproducers.solver.issue117.domain;
 
 import ai.timefold.solver.core.api.domain.entity.PlanningEntity;
+import ai.timefold.solver.core.api.domain.lookup.PlanningId;
 import ai.timefold.solver.core.api.domain.variable.InverseRelationShadowVariable;
 import ai.timefold.solver.core.api.domain.variable.NextElementShadowVariable;
 import ai.timefold.solver.core.api.domain.variable.PreviousElementShadowVariable;
@@ -32,6 +33,7 @@ public class Customer {
         this.serviceDuration = serviceDuration;
     }
 
+    @PlanningId
     public long getId() {
         return id;
     }

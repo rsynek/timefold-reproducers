@@ -11,11 +11,10 @@ import java.util.List;
 @PlanningEntity
 public class Vehicle {
 
-    @PlanningId
     private long id;
     private Depot depot;
 
-    @PlanningListVariable
+
     private List<Customer> customers;
 
     private LocalTime departureTime;
@@ -30,6 +29,7 @@ public class Vehicle {
         this.departureTime = departureTime;
     }
 
+    @PlanningId
     public long getId() {
         return id;
     }
@@ -46,6 +46,7 @@ public class Vehicle {
         this.depot = depot;
     }
 
+    @PlanningListVariable
     public List<Customer> getCustomers() {
         return customers;
     }

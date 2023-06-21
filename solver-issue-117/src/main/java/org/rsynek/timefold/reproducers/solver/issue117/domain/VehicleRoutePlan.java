@@ -37,27 +37,15 @@ public class VehicleRoutePlan {
         return depots;
     }
 
-    public void setDepots(List<Depot> depots) {
-        this.depots = depots;
-    }
-
     @PlanningEntityCollectionProperty
     public List<Vehicle> getVehicles() {
         return vehicles;
-    }
-
-    public void setVehicles(List<Vehicle> vehicles) {
-        this.vehicles = vehicles;
     }
 
     @ProblemFactCollectionProperty
     @ValueRangeProvider
     public List<Customer> getCustomers() {
         return customers;
-    }
-
-    public void setCustomers(List<Customer> customers) {
-        this.customers = customers;
     }
 
     @PlanningScore
