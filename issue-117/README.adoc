@@ -1,0 +1,6 @@
+= https://github.com/TimefoldAI/timefold-solver/issues/117[timefold-solver issue-117 reproducer]
+
+Reproduce by running:
+
+`mvn clean test`
+
