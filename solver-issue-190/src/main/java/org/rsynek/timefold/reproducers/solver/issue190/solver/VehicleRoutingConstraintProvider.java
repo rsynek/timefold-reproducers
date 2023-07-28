@@ -15,8 +15,7 @@ public class VehicleRoutingConstraintProvider implements ConstraintProvider {
     @Override
     public Constraint[] defineConstraints(ConstraintFactory factory) {
         return new Constraint[]{
-                maxTravelTimePerVisitHardLimit(factory),
-                serviceFinishedAfterDueTime(factory)
+                maxTravelTimePerVisitHardLimit(factory)
         };
     }
 
@@ -38,7 +37,8 @@ public class VehicleRoutingConstraintProvider implements ConstraintProvider {
     }
 
     // This works:
-/*    protected Constraint maxTravelTimePerVisitHardLimit(ConstraintFactory factory) {
+/*
+    protected Constraint maxTravelTimePerVisitHardLimit(ConstraintFactory factory) {
         return factory.forEach(Vehicle.class)
                 .filter(vehicle -> vehicle.getMaxTravelTimePerVisitHardLimit() != null)
                 .join(Visit.class,
@@ -50,14 +50,7 @@ public class VehicleRoutingConstraintProvider implements ConstraintProvider {
                         (vehicleShift, visit) -> visit.getDrivingTimeSecondsFromPreviousStandstill()
                                 - vehicleShift.getMaxTravelTimePerVisitHardLimit().toSeconds())
                 .asConstraint("maxTravelTimePerVisitHardLimit");
-    }*/
-
-
-    protected Constraint serviceFinishedAfterDueTime(ConstraintFactory factory) {
-        return factory.forEach(Visit.class)
-                .filter(Visit::isServiceFinishedAfterDueTime)
-                .penalizeLong(HardSoftLongScore.ONE_HARD,
-                        Visit::getServiceFinishedDelayInMinutes)
-                .asConstraint("serviceFinishedAfterDueTime");
     }
+*/
+
 }
