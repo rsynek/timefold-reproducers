@@ -10,6 +10,7 @@
   <packaging>pom</packaging>
   <modules>
     <module>solver-issue-117</module>
+    <module>solver-issue-190</module>
   </modules>
 
   <properties>
